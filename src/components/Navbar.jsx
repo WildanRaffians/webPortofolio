@@ -45,7 +45,7 @@ const Navbar = () => {
     let menuActive = show ? "left-0" : "-left-full";
 
     return (
-        <div className={`navbar fixed w-full transition-all ${scrollActive} `}>
+        <div className={`navbar fixed w-full transition-all ${scrollActive} md:px-20 px-5`}>
             <div className="container mx-auto px-4">
                 <div className="navbar-box flex items-center justify-between">
                     <div className="logo">
@@ -75,8 +75,8 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <div className="social flex items-center gap-2">
-                        <a href="#social" className="bg-primary px-5 py-2 rounded-full text-white font-bold hover:bg-primaryDarker transition-all">Sosial Media</a>
-                        <i className="ri-menu-line text-3xl md:hidden block" onClick={handleClick}></i>
+                        <a href="#social" className="bg-primary px-5 py-2 rounded-full text-white font-bold hover:bg-primaryDarker transition-all">Kontak</a>
+                        <i className="ri-menu-line text-3xl md:hidden block dark:text-white" onClick={handleClick}></i>
                         <label className="inline-flex items-center relative">
                             <input
                                 type="checkbox"
