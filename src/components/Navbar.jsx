@@ -41,7 +41,7 @@ const Navbar = () => {
     }, [darkMode]);
 
 
-    let scrollActive = scroll ? "py-6 dark:bg-gray-800 bg-white shadow" : "py-4";
+    let scrollActive = scroll ? "py-6 dark:bg-gray-900 bg-white shadow" : "py-4";
     let menuActive = show ? "left-0" : "-left-full";
 
     return (
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <ul className={`flex lg:gap-12 md:static md:flex-row md:shadow-none 
                 md:bg-transparent md:w-auto md:h-full md:translate-y-0 md:text-black 
                 md:p-0 md:m-0 md:transition-none gap-8 fixed ${menuActive} top-1/2 -translate-y-1/2 flex-col px-8 py-6 rounded 
-                shadow-lg shadow-slate-300 bg-primary text-white transition-all`}>
+                shadow-lg shadow-slate-700 bg-primary text-white transition-all`}>
                         <li className="flex items-center gap-3">
                             <i className="ri-home-2-line text-3xl md:hidden block" ></i>
                             <a href="#home" className="font-medium opacity-75 dark:text-white">
