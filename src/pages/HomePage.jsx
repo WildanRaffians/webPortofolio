@@ -12,14 +12,14 @@ const HomePage = () => {
       <div className="container mx-auto px-4">
         <div className="hero grid md:grid-cols-2 grid-cols-1 items-center gap-20 pt-32">
           <div className="box">
-            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">
-              Belajar Membuat Website dengan <span className="font-bold text-sky-400 underline">Tailwind CSS</span>
+            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7 dark:text-white">
+              Belajar Membuat Website dengan <span className="font-bold text-primary underline">Tailwind CSS</span>
             </h1>
-            <p className="text-base/8 mb-7">
+            <p className="text-base/8 mb-7 dark:text-white">
               Lorem ipsum dolor sit ametwawaw awawa awawa awaw awawawaw awawaaw 
               awaw awawaw awawaw
             </p>
-            <a href="#" className="bg-sky-400 hover:bg-sky-500 transition-all py-2 px-4 text-white shadow rounded-full">
+            <a href="#" className="bg-primary hover:bg-primaryDarker transition-all py-2 px-4 text-white shadow rounded-full">
               Tentang Kami <i className="ri-eye-line ms-1"></i>
             </a>
           </div>
@@ -33,10 +33,10 @@ const HomePage = () => {
             <img src={AboutImage} alt="About Image" className="lg:w-[500px] w-[400px] md:m-0 mx-auto"/>
           </div>
           <div className="box md:order-2 order-1">
-            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">
-              Belajar Membuat Website dengan <span className="font-bold text-sky-400 underline">Tailwind CSS</span>
+            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7 dark:text-white">
+              Belajar Membuat Website dengan <span className="font-bold text-primary underline">Tailwind CSS</span>
             </h1>
-            <p className="text-base/loose">
+            <p className="text-base/loose  dark:text-white">
               Lorem ipsum dolor sit ametwawaw awawa awawa awaw awawawaw awawaaw 
               awaw awawaw awawaw
             </p>
@@ -44,22 +44,22 @@ const HomePage = () => {
         </div>
 
         <div className="services pt-32" id="services">
-          <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2">Layanan</h1>
-          <p className="text-center">Hai anak kambeng gembala bisa segalanya</p>
+          <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2 dark:text-white">Layanan</h1>
+          <p className="text-center  dark:text-white">Hai anak kambeng gembala bisa segalanya</p>
           <div className="services_box pt-12 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-            <div className="box bg-sky-400 rounded-lg shadow p-4">
+            <div className="box bg-primary rounded-lg shadow p-4">
               <i className="ri-number-1 text-3xl text-white"></i>
-              <h3 className="text-xl font-bold text-white mt-6 mb-2">Service Name 1</h3>
+              <h3 className="text-xl font-bold text-white mt-6 mb-2 dark:text-white">Service Name 1</h3>
               <p className="text-white text-base/loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non et voluptate numquam voluptatibus
                  ipsam?</p>
             </div>
-            <div className="box bg-sky-400 rounded-lg shadow p-4">
+            <div className="box bg-primary rounded-lg shadow p-4">
               <i className="ri-number-2 text-3xl text-white"></i>
               <h3 className="text-xl font-bold text-white mt-6 mb-2">Service Name 2</h3>
               <p className="text-white text-base/loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non et voluptate numquam voluptatibus
                  ipsam?</p>
             </div>
-            <div className="box bg-sky-400 rounded-lg shadow p-4">
+            <div className="box bg-primary rounded-lg shadow p-4">
               <i className="ri-number-3 text-3xl text-white"></i>
               <h3 className="text-xl font-bold text-white mt-6 mb-2">Service Name 3</h3>
               <p className="text-white text-base/loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non et voluptate numquam voluptatibus
@@ -69,8 +69,8 @@ const HomePage = () => {
         </div>
 
         <div className="proyek pt-32" id="proyek">
-        <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2">Proyek</h1>
-          <p className="text-center">Hai anak kambeng gembala bisa segalanya</p>
+        <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2 dark:text-white">Proyek</h1>
+          <p className="text-center dark:text-white">Hai anak kambeng gembala bisa segalanya</p>
           <div className="proyek_box  pt-12 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
             <div className="box p-2 bg-white shadow">
               <img src={Proyek1} alt="Proyek Image" className="w-full h-[220px]" />

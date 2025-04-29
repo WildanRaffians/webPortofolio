@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage"
 function App() {
   
   return(
-    <div>
+    <div className="dark:bg-gray-700 bg-white transition-all">
       {/* Navbar */}
       <Navbar/>
       
