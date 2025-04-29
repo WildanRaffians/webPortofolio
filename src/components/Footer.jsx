@@ -8,9 +8,13 @@ const Footer = () => {
         <div className="social-footer flex items-center sm:gap-6 gap-2  dark:text-white">
           <i className="ri-mail-fill text-2xl"></i>
           <i className="ri-instagram-fill text-2xl"></i>
-          <i className="ri-youtube-fill text-2xl"></i>
+          <a href="https://www.youtube.com/@wildanhafizhraffianshar3743">
+            <i className="ri-youtube-fill text-2xl"></i>
+          </a>
           <i className="ri-linkedin-box-fill text-2xl"></i>
-          <i className="ri-github-fill text-2xl"></i>  
+          <a href="https://github.com/WildanRaffians">
+            <i className="ri-github-fill text-2xl"></i>  
+          </a>
         </div>  
       </div>  
     </div>
