@@ -49,7 +49,7 @@ const Navbar = () => {
             <div className="container mx-auto px-4">
                 <div className="navbar-box flex items-center justify-between">
                     <div className="logo">
-                        <h1 className="sm:text-2xl text-xl font-bold dark:text-primary">raffians.</h1>
+                        <h1 className="sm:text-2xl text-xl font-bold dark:text-primary">raffians<span className="text-primary dark:text-white">.</span></h1>
                     </div>
                     <ul className={`flex lg:gap-12 md:static md:flex-row md:shadow-none 
                 md:bg-transparent md:w-auto md:h-full md:translate-y-0 md:text-black 
