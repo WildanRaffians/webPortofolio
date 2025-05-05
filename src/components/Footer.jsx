@@ -7,12 +7,16 @@ const Footer = () => {
         </p>
         <div className="social-footer flex items-center sm:gap-6 gap-2  dark:text-white">
           <i className="ri-mail-fill text-2xl"></i>
-          <i className="ri-instagram-fill text-2xl"></i>
-          <a href="https://www.youtube.com/@wildanhafizhraffianshar3743">
+          <a href="https://www.instagram.com/wildanraffians/">
+            <i className="ri-instagram-fill text-2xl" target="_blank"></i>
+          </a>
+          <a href="https://www.youtube.com/@wildanhafizhraffianshar3743"  target="_blank">
             <i className="ri-youtube-fill text-2xl"></i>
           </a>
-          <i className="ri-linkedin-box-fill text-2xl"></i>
-          <a href="https://github.com/WildanRaffians">
+          <a href="https://www.linkedin.com/in/wildanhafizhraffianshar2003" target="_blank" >
+            <i className="ri-linkedin-box-fill text-2xl"></i>
+          </a>
+          <a href="https://github.com/WildanRaffians" target="_blank">
             <i className="ri-github-fill text-2xl"></i>  
           </a>
         </div>  

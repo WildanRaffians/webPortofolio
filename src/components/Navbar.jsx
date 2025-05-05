@@ -31,21 +31,18 @@ const Navbar = () => {
     useEffect(() => {
         const root = window.document.documentElement;
         if (darkMode) {
-            console.log("jadi malam");
-
             root.classList.add("dark");
         } else {
-            console.log("jadi siang");
             root.classList.remove("dark");
         }
     }, [darkMode]);
 
 
-    let scrollActive = scroll ? "py-6 dark:bg-gray-900 bg-white shadow" : "py-4";
+    let scrollActive = scroll ? "py-6 dark:bg-gray-900 bg-white shadow-lg" : "py-4";
     let menuActive = show ? "left-0" : "-left-full";
 
     return (
-        <div className={`navbar fixed w-full transition-all ${scrollActive} md:px-20 px-5`}>
+        <div className={`navbar fixed w-full transition-all ${scrollActive} md:px-20 px-5  z-50`}>
             <div className="container mx-auto px-4">
                 <div className="navbar-box flex items-center justify-between">
                     <div className="logo">
@@ -84,7 +81,7 @@ const Navbar = () => {
                                 onChange={() => setDarkMode(!darkMode)}
                                 className="peer hidden"
                             />
-                            <div className="relative w-[90px] h-[40px] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-[30px] after:h-[30px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[5px] after:left-[5px] active:after:w-[50px] peer-checked:after:left-[83px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-md"></div>
+                            <div className="relative w-[72px] h-[40px] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-[30px] after:h-[30px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[5px] after:left-[5px] active:after:w-[50px] peer-checked:after:left-[65px] peer-checked:after:translate-x-[-100%]  shadow-md duration-300 after:duration-300"></div>
 
                             <svg
                                 height="0"
