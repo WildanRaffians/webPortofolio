@@ -23,7 +23,7 @@ import Flutter from "../assets/images/flutter-svgrepo-com.svg"
 import Dihospital from "../assets/images/dihospital.jpg"
 import Updown from "../assets/images/updown.png"
 import Hydroculus from "../assets/images/hydroculus.png"
-import Kivryelle from "../assets/images/Kivryelle.jpg"
+import Kivryelle from "../assets/images/kivryelle.jpg"
 import Gw from "../assets/images/gw.png"
 import Dbms from "../assets/images/dbms.jpg"
 
