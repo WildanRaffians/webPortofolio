@@ -1,11 +1,13 @@
 const Footer = () => {
   return (
-    <div className="footer bg-white shadow mt-20  dark:bg-gray-900 md:px-20 px-5" id="social">
+    <div className="footer bg-primary mt-20  dark:bg-gray-900 md:px-20 px-5" id="social">
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <p className="py-4  dark:text-white">
+        <p className="py-4  text-white">
           &copy; Copyright by <span className="font-bold">Wildan Hafizh Raffianshar 2025</span>
+          <br />
+          <span className="pl-4">Dibuat menggunakan React v19 dan Tailwind v3.4.3</span>
         </p>
-        <div className="social-footer flex items-center sm:gap-6 gap-2  dark:text-white">
+        <div className="social-footer flex items-center sm:gap-6 gap-2  text-white">
           <i className="ri-mail-fill text-2xl"></i>
           <a href="https://www.instagram.com/wildanraffians/">
             <i className="ri-instagram-fill text-2xl" target="_blank"></i>
