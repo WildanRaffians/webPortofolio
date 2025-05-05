@@ -26,6 +26,7 @@ import Hydroculus from "../assets/images/hydroculus.png"
 import Kivryelle from "../assets/images/kivryelle.jpg"
 import Gw from "../assets/images/gw.png"
 import Dbms from "../assets/images/dbms.jpg"
+import Catetan from "../assets/images/catetan.png"
 
 export const techs = [
   { name: 'HTML', icon: Html },
@@ -114,6 +115,16 @@ export const projects = [
         Dibuat menggunakan framework CodeIgniter`,
     tags: ['PHP', 'CodeIgniter', 'Bootstrap', 'HTML', 'CSS', 'MySql', 'Web Development' ],
     github: 'https://github.com/WildanRaffians/GW'
+
+    },
+    {
+        title: 'Catetan',
+        img: Catetan,
+        desc: `Sebuah aplikasi dekstop untuk menyimpan catatan. Dapat menambahkan catatan dengan beberapa text decoration seperti bold, italic, underline, dll.
+        dapat melihat dan mencari catatan yang disimpan. Dapat meng-'pin' catatan agar selalu diatas, terdapat shortcut untuk copy isi catatan, dapat merubah isi atau pun menghapus catatan.
+        terdapat informasi kapan catatan dibuat dan terakhir diperbarui. Dibuat menggunakan electron.js.`,
+    tags: ['Electron', 'HTML', 'CSS', 'JS', 'Dekstop Aplication'],
+    github: 'https://github.com/WildanRaffians/DekstopApp-Catetan'
 
     },
   ];
