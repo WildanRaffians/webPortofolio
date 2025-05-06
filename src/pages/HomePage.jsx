@@ -112,7 +112,8 @@ const HomePage = () => {
         </div>
 
         <div className="pt-32 px-4 relative mx-auto" id="experiences">
-          <h1 className="text-center lg:text-5xl text-3xl font-medium mb-6 dark:text-white">Experiences</h1>
+          <h1 className="text-center lg:text-5xl text-3xl font-medium mb-2 dark:text-white">Experiences</h1>
+          <p className="text-center dark:text-white pb-12">What I've been up to</p>
 
           {/* Tombol panah kiri */}
           <button
