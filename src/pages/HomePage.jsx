@@ -68,7 +68,7 @@ const HomePage = () => {
           </div>
           <div className="box md:order-2 order-1">
             <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7 dark:text-white">
-              Me <span className="font-bold text-primary">...</span>
+              Me<span className="font-bold text-primary">?</span>
             </h1>
             <p className="text-base/loose  dark:text-white text-justify">
             I'm a computer science student with a love for web and mobile app development. 
