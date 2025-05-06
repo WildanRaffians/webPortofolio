@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="pl-4">Built with <span className="font-bold">React v19</span> and <span className="font-bold">Tailwind v3.4.3</span></span>
         </p>
         <div className="social-footer flex items-center sm:gap-6 gap-2  text-white">
-          <i className="ri-mail-fill text-2xl"></i>
+          <p>wildanhraffianshar@gmail.com</p>
           <a href="https://www.instagram.com/wildanraffians/">
             <i className="ri-instagram-fill text-2xl" target="_blank"></i>
           </a>
