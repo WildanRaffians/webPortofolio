@@ -2,9 +2,10 @@ import HeroImage from "../assets/images/hero1.png";
 import AboutImage from "../assets/images/about1.png"
 import Cvku from "../assets/pdf/WildanRaffianshar_CV.pdf"
 import emailjs from 'emailjs-com';
-import { techs, projects } from '../data/data';
+import { techs, projects, experiences } from '../data/data';
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const HomePage = () => {
   const form = useRef();
@@ -12,7 +13,7 @@ const HomePage = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_5qelyou', 'template_phyde1p', form.current, 'CvU3xCj0vfuMNeuqq')
+      .sendForm('service_tikushijau', 'template_5y9vmn9', form.current, 'gKkSGfq0_d8HHCFxT')
       .then(
         (result) => {
           alert('Pesan berhasil dikirim!');
@@ -22,8 +23,19 @@ const HomePage = () => {
           console.error(error.text);
         }
       );
+    form.current.reset();
+  };
 
-    // e.current.reset();
+  const [index, setIndex] = useState(0);
+
+  const exp = experiences[index];
+
+  const next = () => {
+    setIndex((prev) => (prev + 1) % experiences.length);
+  };
+
+  const prev = () => {
+    setIndex((prev) => (prev - 1 + experiences.length) % experiences.length);
   };
 
   return (
@@ -56,11 +68,13 @@ const HomePage = () => {
           </div>
           <div className="box md:order-2 order-1">
             <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7 dark:text-white">
-              The thing is <span className="font-bold text-primary">...</span>
+              Me <span className="font-bold text-primary">...</span>
             </h1>
             <p className="text-base/loose  dark:text-white text-justify">
-              Aku ingin menjadi kucing.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde, harum fugit nemo doloremque saepe hic obcaecati laudantium voluptatem, quis aliquam facilis! Amet ratione rem obcaecati eaque ad quis cupiditate odio asperiores officiis ea iste, placeat impedit eos adipisci quidem vero nesciunt illum mollitia quam sed! Aspernatur ducimus deleniti hic saepe, optio tempora, tenetur impedit amet repellendus soluta inventore sit necessitatibus consequuntur? Quidem soluta tenetur laudantium deleniti animi nesciunt quasi? Quidem repudiandae maxime incidunt placeat quo porro optio fuga, ratione eligendi dignissimos odio, voluptatibus in praesentium aliquid voluptate possimus? Alias saepe pariatur, maxime commodi harum explicabo quo itaque officiis accusamus!
+            I'm a computer science student with a love for web and mobile app development. 
+            I enjoy turning ideas into real products and constantly pushing myself to learn more. 
+            Whether it's experimenting with new frameworks or collaborating on projects, I'm always excited to build and improve. 
+            In my free time, I like reading about tech, exploring design trends, and occasionally playing around with new tools.
             </p>
           </div>
         </div>
@@ -79,7 +93,7 @@ const HomePage = () => {
         <div className="mt-5 flex flex-wrap gap-5 justify-center">
           {techs.map((item, i) => (
             <div
-              className="dark:bg-gray-600 p-2 w-16 h-16 rounded-xl shadow-xl flex items-center justify-center"
+              className="group relative dark:bg-gray-600 p-2 w-16 h-16 rounded-xl shadow-xl flex items-center justify-center"
               key={i}
             >
               <img
@@ -87,6 +101,9 @@ const HomePage = () => {
                 alt={item.name}
                 className="w-12 h-12 object-contain"
               />
+              <span className="absolute bottom-full mb-2 px-2 py-1 text-xs text-white bg-black dark:bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                {item.name}
+              </span>
             </div>
           ))}
         </div>
@@ -94,32 +111,32 @@ const HomePage = () => {
           <hr className="w-full border-t-4 border-gray-600 " />
         </div>
 
+        <div className="pt-32 px-4 relative mx-auto" id="experiences">
+          <h1 className="text-center lg:text-5xl text-3xl font-medium mb-6 dark:text-white">Experiences</h1>
 
+          {/* Tombol panah kiri */}
+          <button
+            onClick={prev}
+            className="absolute md:-left-10 -left-6 top-2/3 transform -translate-y-1/2 z-20 dark:bg-gray-900 dark:text-white bg-white p-2 rounded-full shadow hover:bg-gray-200"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
 
-
-        <div className="services pt-32" id="services">
-          <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2 dark:text-white">Experiences</h1>
-          <p className="text-center  dark:text-white">Hai anak kambeng gembala bisa segalanya</p>
-          <div className="services_box pt-12 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-            <div className="box bg-primary rounded-lg shadow p-4">
-              <i className="ri-number-1 text-3xl text-white"></i>
-              <h3 className="text-xl font-bold text-white mt-6 mb-2 dark:text-white">EXP 1</h3>
-              <p className="text-white text-base/loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non et voluptate numquam voluptatibus
-                ipsam?</p>
-            </div>
-            <div className="box bg-primary rounded-lg shadow p-4">
-              <i className="ri-number-2 text-3xl text-white"></i>
-              <h3 className="text-xl font-bold text-white mt-6 mb-2">EXP 2</h3>
-              <p className="text-white text-base/loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non et voluptate numquam voluptatibus
-                ipsam?</p>
-            </div>
-            <div className="box bg-primary rounded-lg shadow p-4">
-              <i className="ri-number-3 text-3xl text-white"></i>
-              <h3 className="text-xl font-bold text-white mt-6 mb-2">EXP 3</h3>
-              <p className="text-white text-base/loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non et voluptate numquam voluptatibus
-                ipsam?</p>
-            </div>
+          {/* Konten pengalaman */}
+          <div className="bg-primary text-white p-6 rounded-xl shadow text-left ">
+            <div className="text-2xl font-bold mb-2">{index + 1}</div>
+            <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-300 pb-5">{exp.at}</h3>
+            <p className="text-base leading-relaxed text-justify max-h-[190px] min-h-[120px] overflow-y-auto hide-scrollbar">{exp.description}</p>
           </div>
+
+          {/* Tombol panah kanan */}
+          <button
+            onClick={next}
+            className="absolute md:-right-10 -right-6 top-2/3 transform -translate-y-1/2 z-20 dark:bg-gray-900 dark:text-white bg-white p-2 rounded-full shadow hover:bg-gray-200"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
         </div>
 
         <div className="proyek pt-32" id="proyek">

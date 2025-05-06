@@ -64,7 +64,7 @@ const Navbar = () => {
                         </li>
                         <li className="flex items-center gap-3">
                             <i className="ri-settings-3-line text-3xl md:hidden block" ></i>
-                            <a href="#services" className="font-medium opacity-75 dark:text-white">Experiences</a>
+                            <a href="#experiences" className="font-medium opacity-75 dark:text-white">Experiences</a>
                         </li>
                         <li className="flex items-center gap-3">
                             <i className="ri-image-line text-3xl md:hidden block" ></i>
