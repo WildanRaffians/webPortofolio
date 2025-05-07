@@ -128,7 +128,7 @@ const HomePage = () => {
             <div className="text-2xl font-bold mb-2">{index + 1}</div>
             <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
             <h3 className="text-xl font-semibold mb-2 text-gray-300 pb-5">{exp.at}</h3>
-            <p className="text-base leading-relaxed text-justify max-h-[190px] min-h-[120px] overflow-y-auto hide-scrollbar">{exp.description}</p>
+            <p className="text-base leading-relaxed text-justify h-[190px] overflow-y-auto hide-scrollbar">{exp.description}</p>
           </div>
 
           {/* Tombol panah kanan */}
